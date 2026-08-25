@@ -54,35 +54,25 @@
       <br>
       <p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p>
       <ul>
-        <div id="gplay" class="conditional-content">
-          <li>
-            <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a>
-          </li>
-        </div>
+        <li id="gplay" class="conditional-content">
+          <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a>
+        </li>
         
-        <div id="admob" class="conditional-content">
-          <li>
-            <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">AdMob</a>
-          </li>
-        </div>
+        <li id="admob" class="conditional-content">
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">AdMob</a>
+        </li>
         
-        <div id="fanal" class="conditional-content">
-          <li>
-            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a>
-          </li>
-        </div>
+        <li id="fanal" class="conditional-content">
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a>
+        </li>
         
-        <div id="fcrash" class="conditional-content">
-          <li>
-            <a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a>
-          </li>
-        </div>
+        <li id="fcrash" class="conditional-content">
+          <a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a>
+        </li>
         
-        <div id="rcat" class="conditional-content">
-          <li>
-            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a>
-          </li>
-        </div>
+        <li id="rcat" class="conditional-content">
+          <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a>
+        </li>
       </ul>
     </div>
     <br>
@@ -149,7 +139,7 @@
 
             // 1. 기존 기능: 앱 이름 치환
             let appName = urlParams.get('app');
-            appName = appName ? decodeURIComponent(appName) : "This Service";
+            appName = appName ? decodeURIComponent(appName) : "this";
             
             document.querySelectorAll('.app-name').forEach(element => {
                 element.textContent = appName;
