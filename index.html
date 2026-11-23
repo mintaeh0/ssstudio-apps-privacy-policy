@@ -67,10 +67,6 @@
               content.querySelector(`#${service}`)?.classList.remove("conditional-content");
             }
           });
-          if (/^coffee rise!?$/i.test(appName)) {
-            content.querySelector("#coffee-rise-cloud-save")?.classList.remove("conditional-content");
-            content.querySelector("#aggregated-only")?.classList.add("conditional-content");
-          }
         } catch (error) {
           console.error("Failed to load privacy policy:", error);
           content.innerHTML = "";
